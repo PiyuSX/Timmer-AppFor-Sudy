@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Timer } from './components/Timer';
 import { SessionMenu } from './components/SessionMenu';
 import { SessionList } from './components/SessionList';
+import { Clock } from './components/Clock';
 import type { Session } from './types/session';
 
 export default function App() {
@@ -72,6 +73,8 @@ export default function App() {
           </div>
         </div>
       )}
+
+      <Clock />
     </div>
   );
 }
