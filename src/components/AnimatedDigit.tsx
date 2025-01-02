@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import './AnimatedDigit.css';
 
 interface AnimatedDigitProps {
   value: string;
+  paused: boolean;
 }
 
-export function AnimatedDigit({ value }: AnimatedDigitProps) {
+export function AnimatedDigit({ value, paused }: AnimatedDigitProps) {
   const [flip, setFlip] = useState(false);
   const [displayValue, setDisplayValue] = useState(value);
 
